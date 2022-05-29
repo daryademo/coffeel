@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoffeeLab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="bulma-list.css">
+    
+    <style>
+     #title-test:hover{color: rgb(95, 161, 150);} 
+
+     .navbar .navbar-brand {
+  text-align: center;
+  position:absolute;
+  display: block;
+  width: 100%;
+}
+
+nav {
+  box-shadow: 0 10px 20px 0 rgba(78, 78, 78, 0.2);
+}
+
+.navbar .navbar-brand > .navbar-item,
+.navbar .navbar-brand .navbar-link {
+  display: inline-block;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item is-size-4 has-text-weight-bold has-hover-black" id="title-test" href="index.html">
+            
+            CoffeeLab
+          </a>
+      
+
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true "></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+           
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+             
+                <img src="{{url_for('static', filename='102.png')}}">
+               
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+                
+                .navbar-menu.is-active .hamburger {
+                  display: none;
+          }
+
+                  
+            <div class="navbar-menu is-active">
+                 <!-- shown on mobile -->
+           </div>
+                  
+                
+                 
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" a href="menu.html"> 
+                  Menu  
+                </a>
+                <a class="navbar-item" a href="locations.html">
+                  Locations
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" a href="jobs.html">
+                  Jobs
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-dark"> 
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light" href="login.html">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="{{url_for('static', filename='80.jpg')}}" alt="Placeholder image">
+              
+            </figure>
+          </div>
+
+
+          <!-- Start Hero Carousel -->
+		<section class="hero is-medium has-carousel">
+			<div id="carousel-demo" class="hero-carousel">
+				<div class="item-1">
+					<!-- Slide Content -->
+          <img src="41.jpg"> </img>
+				</div>
+				<div class="item-2">
+					<!-- Slide Content -->
+          <img src="41.jpg"> </img>
+				</div>
+				<div class="item-3">
+					<!-- Slide Content -->
+          <img src="41.jpg"> </img>
+				</div>
+			</div>
+			<div class="hero-head"></div>
+			<div class="hero-body"></div>
+			<div class="hero-foot"></div>
+		</section>
+		<!-- End Hero Carousel -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#carousel-demo', {
+				slidesToScroll: 1,
+				slidesToShow: 4
+			});
+		</script>
+
+    
+          
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img class="is-rounded" src="101.jpg">
+                </figure>
+              
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Samantha Jones</p>
+                <p class="subtitle is-6">@CoffeeLab</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              We are a small local authentic coffee shop. Check out our drinks at <a>@CoffeeLab </a>!
+              <a href="#">#CoffeeLab</a> <a href="#">#CLSanFrancisco</a>
+              <br>
+              <time datetime="2016-1-1">Est. 2016</time>
+            </div>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="container">
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="carousel">
+
+              <div class="item-1">
+                <!-- Slide Content -->
+                <img src="62.jpg"> </img>
+              </div>
+
+              <div class="item-2">
+                <!-- Slide Content -->
+                <img src="66.jpg"> </img>
+              </div>
+
+              <div class="item-3">
+                <!-- Slide Content -->
+                <img src="65.jpg"> </img>
+              </div>
+
+              <div class="item-5">
+                <!-- Slide Content -->
+                <img src="64.jpg"> </img>
+              </div>
+
+              <div class="item-6">
+                <!-- Slide Content -->
+                <img src="90.jpg"> </img>
+              </div>
+
+              <div class="item-8">
+                <!-- Slide Content -->
+                <img src="41.jpg"> </img>
+              </div>
+
+              <div class="item-9">
+                <!-- Slide Content -->
+                <img src="59.jpg"> </img>
+              </div>
+
+              </div>
+            </div>
+            <!-- End Carousel -->
+          </div>
+        </section>
+
+
+        
+     
+        
+        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+        <script>
+        bulmaCarousel.attach('#carousel-demo', {
+          slidesToScroll: 1,
+          slidesToShow: 4
+        });
+        </script>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+        </script>
+
+        
+
+
+  </body>
+</html>
